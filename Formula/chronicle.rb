@@ -4,22 +4,22 @@
 class Chronicle < Formula
   desc "AI-driven CLI interactive novel game"
   homepage "https://github.com/zxuexingzhijie/clichat"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zxuexingzhijie/clichat/releases/download/v#{version}/chronicle-darwin-arm64.tar.gz"
-      sha256 "PLACEHOLDER_DARWIN_ARM64"
+      sha256 "929bd631f68c247106757f0a14cbe40e039f6ff58b45a38490ac138f0c3fa25c"
     else
       url "https://github.com/zxuexingzhijie/clichat/releases/download/v#{version}/chronicle-darwin-x64.tar.gz"
-      sha256 "PLACEHOLDER_DARWIN_X64"
+      sha256 "5484c8bbe6c030868ba1225770a23a616e4c9f78e72fd5eca63c984d54a1b500"
     end
   end
 
   on_linux do
     url "https://github.com/zxuexingzhijie/clichat/releases/download/v#{version}/chronicle-linux-x64.tar.gz"
-    sha256 "PLACEHOLDER_LINUX_X64"
+    sha256 "74cf50469c6f52a94c9b04b9b015cabf6b238ef49b9fcd701f6c941de8e932cd"
   end
 
   def install
